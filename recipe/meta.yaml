@@ -1,4 +1,4 @@
-{% set version = "1.0.2" %}
+{% set version = "1.0.3" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -11,12 +11,12 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/cyphr_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/cyphr/cyphr_{{ version }}.tar.gz
-  sha256: 8e812f4f0ed4fc9a289699ea52772285977ff1367e30431c48362505ac9cdc71
+  sha256: f7ed865948eee3d056546b85bd531d7c3f38ef8e9db64f0703e8eafa951188c0
 
 build:
   number: 0
   noarch: generic
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   rpaths:
     - lib/R/lib/
     - lib/
@@ -44,10 +44,8 @@ about:
   home: https://github.com/ropensci/cyphr
   license: MIT
   license_file: LICENSE
-  summary: Encryption wrappers, using low-level support from 'sodium' and 'openssl'.  'cyphr'
-    tries to smooth over some pain points when using encryption within applications
-    and data analysis by wrapping around differences in function names and arguments
-    in different encryption providing packages.  It also provides high-level wrappers
+  summary: Encryption wrappers, using low-level support from 'sodium' and 'openssl'.  'cyphr' tries to smooth over some pain points when using encryption within applications
+    and data analysis by wrapping around differences in function names and arguments in different encryption providing packages.  It also provides high-level wrappers
     for input/output functions for seamlessly adding encryption to existing analyses.
   license_family: MIT
 
