@@ -1,4 +1,4 @@
-{% set version = "1.0.3" %}
+{% set version = "1.1.0" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -11,7 +11,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/cyphr_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/cyphr/cyphr_{{ version }}.tar.gz
-  sha256: f7ed865948eee3d056546b85bd531d7c3f38ef8e9db64f0703e8eafa951188c0
+  sha256: 5c5f855e8091811967081da0af9d6e9837cbf8a5e00500eee73ff9bdcb32820f
 
 build:
   number: 0
