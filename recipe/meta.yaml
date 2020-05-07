@@ -14,7 +14,7 @@ source:
   sha256: 5c5f855e8091811967081da0af9d6e9837cbf8a5e00500eee73ff9bdcb32820f
 
 build:
-  number: 0
+  number: 1
   noarch: generic
   merge_build_host: true  # [win]
   rpaths:
@@ -23,7 +23,7 @@ build:
 
 requirements:
   build:
-    - {{posix}}zip  # [win]
+    - {{ posix }}zip  # [win]
   host:
     - r-base
     - r-getpass
