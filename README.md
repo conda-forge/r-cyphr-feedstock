@@ -1,11 +1,11 @@
-About r-cyphr
-=============
+About r-cyphr-feedstock
+=======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-cyphr-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/ropensci/cyphr
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-cyphr-feedstock/blob/main/LICENSE.txt)
 
 Summary: Encryption wrappers, using low-level support from 'sodium' and 'openssl'.  'cyphr' tries to smooth over some pain points when using encryption within applications and data analysis by wrapping around differences in function names and arguments in different encryption providing packages.  It also provides high-level wrappers for input/output functions for seamlessly adding encryption to existing analyses.
 
